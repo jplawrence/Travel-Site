@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+.container-1 {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(images/travel.jpg);
+  z-index: -1;
+}
+.logo {
+  width: 200px;
+  padding: 20px 50px;
+  cursor: pointer;
+}
+.nav-bar {
+  background: #a8a9ff;
+  width: 100%;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+}
+.nav-bar ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  position: relative;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+}
+.nav-bar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #7e7fd4;
+  border-radius: 1.5px;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+.nav-bar ul li:hover::after {
+  width: 100%;
+}
+.description {
+  text-align: left;
+  padding: 150px 50px;
+  margin-right: 50%;
+}
+.description h1 {
+  font-family: "Poppins";
+  font-size: 60px;
+  display: inline-block;
+  padding: 0 5px;
+  color: white;
+}
+.description p {
+  padding: 30px 0;
+  color: white;
+}
+#travel {
+  color: #7e7fd4;
+}
+.description button {
+  background: transparent;
+  width: 160px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid #7e7fd4;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  color: #7e7fd4;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.description button:hover {
+  background: #7e7fd4;
+  color: white;
+}
+.container-2 h2 {
+  padding: 5px 0;
+  text-align: center;
+  color: black;
+  font-family: "Poppins";
+  font-size: 60px;
+  position: absolute;
+  right: 25%;
+}
+.container-2 {
+  padding: 50px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background-image: linear-gradient(to bottom, #9c9dda, #fff);
+}
+.container-2 img {
+  padding: 170px 0;
+  height: 400px;
+}
+.container-2 button {
+  position: absolute;
+  top: 195%;
+  left: 43%;
+  transform: translateY(-50%);
+  background: transparent;
+  width: 160px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid #7e7fd4;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  color: #7e7fd4;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.container-2 button:hover {
+  background: #7e7fd4;
+  color: white;
+}
